@@ -12,6 +12,7 @@ void draw (){
   
     s=s+0.02;
     
+  //rectangle that creates the tunnel illusion
   pushMatrix();
   strokeWeight(0);
   fill(255);
@@ -19,10 +20,12 @@ void draw (){
   rect(0,500,1500,1);
   popMatrix();
   
+  //white ellipse with smooth scale
   scale(s);
   //translate(width/2,height/2);
   ellipse(0,0,50,50);
   
+  //yellow ellipse with high translucence
   pushMatrix();
   fill(255,245,36,1);
   rotate(frameRate);
